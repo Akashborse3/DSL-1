@@ -1,1 +1,37 @@
+ARRAY
+import array as arr
+n=int(input("enter how many no of numbers:"))
+ip=arr.array('i',[])
+for i in range(n):
+  ip.append(int(input("enter the number")))
+  print(ip)
+
+#SUM
+import array as arr
+n=int(input("enter how many no of numbers:"))
+ip=arr.array('i',[])
+for i in range(n):
+  ip.append(int(input("enter the number")))
+  print(ip)
+
+  sum=0
+  for i in range (len(ip)):
+    sum=sum+ip[i]
+print("sum of the numbers of array:",sum)
+
+AVG
+import array as arr
+n=int(input("enter how many no of numbers:"))
+ip=arr.array('i',[])
+for i in range(n):
+  ip.append(int(input("enter the number")))
+  print(ip)
+
+  sum=0
+  for i in range (len(ip)):
+    sum=sum+ip[i]
+print("sum of the numbers of array:",sum)
+
+avg=sum/n
+print("average of the numbers of the array:",avg)
 
