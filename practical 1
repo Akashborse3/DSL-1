@@ -1,16 +1,65 @@
-netAmount= 0
-while True:
-    s = input("enter the operation and then amount")
-    if not s:
-        break
-    values = s.split(" ")
-    operation = values[0]
-    amount = int(values[1])
-    if operation=="D":
-        netAmount+=amount
-    elif operation=="W":
-        netAmount-=amount
-    else:
-        break
+marks of students = []
  
-print (netAmount)
+num= int(input("enter the no of students: "))
+for i in range(num):
+  m=int(input("enter marks:"))
+  marks of students.append(m)
+print(marks of students)
+
+#average and sum of the marks of students
+
+def avg_marks():
+
+  sum = 0
+  cnt = 0
+  for i in range(len(marks of students)):
+    sum = sum + marks of students[i]
+    cnt = cnt + 1
+    avg = sum/cnt
+
+avg_marks()
+print("total marks: ",sum)
+print(avg)
+
+#highest marks of students
+
+def high_marks():
+   
+   temp = marks of students[0]
+   for i in range(len(marks of students)):
+
+     if temp < marks of students[i]:
+         temp = marks of students[i]
+         
+   print("highest marks:",temp)
+
+#lowest marks of students
+
+def low_marks():
+   global temp
+   temp = marks of students[0]
+   for i in range(len(marks of students)):
+
+     if temp > marks of students[i]:
+      temp = marks of students[i]
+   print("lowest marks:",temp)
+
+#count of absent students
+
+def count_abs():
+  cnt = 0;
+  for i in range(len(marks of students)):
+    if [i] == -1:
+      cnt+= 1
+  print("no of absent students:",cnt)
+
+#display marks with highest frequency
+
+def high_frequency():
+  frequency = []
+  for i in range(len(marks of students)):
+    if marksofstudents[i] is not -1:
+      frequency.append(marks of students.count(marks of students[i]))
+  print(frequency)
+
+
