@@ -1,0 +1,21 @@
+number=input("Enter any sentence :")
+i=0
+for i in range(len(number)):
+    if number[i]!=number[-1-i]:
+        print('It is not a palindrome')
+        break
+    else:
+        print('It is a palindrome')
+        break
+split=()
+longest_word = 0
+for i in number. split():
+  if(len(i) > longest_word):
+    longest_word = len(i)
+
+print("longest word:", longest_word)
+
+#output
+Enter any sentence :my name is akash
+It is not a palindrome
+longest word: 5
