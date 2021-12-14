@@ -71,7 +71,7 @@ int main()
 	char str[max];
 	int i=0;
 	
-	cout<<"\nEnter string to be reversed and check is it palindrome or not : \n\n";
+	cout<<"\nEnter the string and check its palindrome or not : \n\n";
 	
 	cin.getline(str , 50);
 	
