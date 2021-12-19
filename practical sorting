@@ -15,7 +15,7 @@ key = int(input("enter the number to be found using linear:"))
 l = linearsearch(s , key)
 print("element is found at index:", l)
 
-
+---------------------------------------------------------------------------
 #sentinal
 n = int(input("enter the roll numbers:"))
 s = []
@@ -37,7 +37,7 @@ key2 = int(input("enter the number to be found using sentinel:"))
 sentinal = SentinalSearch(s , key2)
 print("element is found at index:", sentinal)
 
-
+---------------------------------------------------------------------------
 
 n =int(input("enter the numbers:"))
 s = []
@@ -53,11 +53,32 @@ def insertion_sort(s,n):
     s[j+1] = s[j]
     j= j-1                                          #insertion
     arr[j+1]= temp
-  
-  
-
 insertion_sort(s,n)
 print(s)
+---------------------------------------------------------------------------
+
+
+#shell sort
+
+n=int(input("Enter total number of students: "))
+s=[]
+for i in range(n):
+    r=int(input(f"Enter roll number: "))
+    s.append(r)
+def shellsort(arr,n):
+    gap=n//2
+    while gap>0:
+        for i in range(gap,n):
+            temp=arr[i]
+            j=i
+            while(j>=gap and arr[j-gap]>temp):
+                arr[j]=arr[j-gap]
+                j=j-gap
+            arr[j]=temp
+        gap=gap//2
+shellsort(s,len(s))
+print("sorted numbers are: ",s)         
+---------------------------------------------------------------------------
 
 # Selection sort 
 
@@ -90,6 +111,8 @@ percentage of students: 60
 percentage of students: 30
 Sorted Array in Ascending Order:
 ['10', '20', '30', '60']
+---------------------------------------------------------------------------
+
 
 # Quick sort in Python
 
@@ -151,7 +174,7 @@ Unsorted Array
 [8, 7, 2, 1, 0, 9, 6]
 Sorted Array in Ascending Order:
 [0, 1, 2, 6, 7, 8, 9]
-
+---------------------------------------------------------------------------
 import random
 
 def bucketSort(array):
