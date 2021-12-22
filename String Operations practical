@@ -1,0 +1,33 @@
+string=input("Enter the first name and last name :")
+i=0
+for i in range(len(string)):
+if string[i]!=string[-1-i]:
+print('It is not a palindrome')
+break
+else:
+print('It is a palindrome')
+break
+# longest word
+split=()
+longest_word = 0
+for i in string. split():
+if(len(i) > longest_word):
+longest_word = len(i)
+print("longest word:", longest_word)
+
+string=input("Enter the string: ")
+char=input("Please enter the char to find frequency of ta character\n")
+count=0
+i=0
+while(i<len(string)):
+if(string[i]==char):
+count=count+1
+i=i+1
+print("The frequency of the ",char,"in the string is: ",count)
+# to display index of substring
+s = "akash borse"
+s.find("h")
+
+# to count the occurences of each word in string
+string =input("enter the string")
+print("length of string:" ,len(string))
